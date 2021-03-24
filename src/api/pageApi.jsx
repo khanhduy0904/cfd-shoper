@@ -1,6 +1,6 @@
-import {domain} from "./config";
 
-export default {
+
+const pageApi = {
     contact: () => {
         return new Promise((resolve, reject) => {
             // resolve({
@@ -13,3 +13,5 @@ export default {
 
     }
 }
+
+export default pageApi;

@@ -9,7 +9,7 @@
 import Api from "../core/Api";
 import {domain} from "./config";
 
-export default {
+const productApi = {
     catalog: (page) => {
         return fetch(`${domain}/product?${page}`).then(res => res.json());
     },
@@ -23,3 +23,7 @@ export default {
         return Api.get('/categories')
     }
 }
+
+
+export default productApi;
+    

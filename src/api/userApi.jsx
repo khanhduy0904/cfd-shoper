@@ -1,7 +1,7 @@
 import {domain} from "./config";
 import Api from "../core/Api";
 
-export default {
+const userApi = {
     login: (data) => {
         return fetch(`${domain}/elearning/v4/login`, {
             method: "POST",
@@ -54,3 +54,5 @@ export default {
         return Api.token().post(`/ecommerce/v1/profile/payment-default`, data)
     },
 }
+
+export default userApi;
