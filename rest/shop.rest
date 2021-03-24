@@ -1,0 +1,48 @@
+@DOMAIN = https://cfd-reactjs.herokuapp.com/
+@TOKEN =
+
+
+
+### USER
+#### Đăng nhập
+
+POST {{DOMAIN}}elearning/v4/login
+Content-Type: application/json
+
+{
+    "username": "abc@gmail.com",
+    "password": "123456"
+}
+
+
+### Đăng xuất
+GET {{DOMAIN}}/logout
+
+### Đăng ký
+
+
+### Cập nhật thông tin
+
+
+
+
+### CATEGORY
+### Lấy cateogry
+GET {{DOMAIN}}categories
+
+### Lấy 1 category cụ thể
+
+
+### Sản phẩm
+#### Lấy danh sách sản phẩm
+GET {{DOMAIN}}product
+
+
+### Lây dan hsachs sản phẩm từ 1 category nào đó
+
+### Lấy thông tin chi tiết 1 sản phẩm
+
+
+### ORDER
+### Cấp nhật thông tin giỏ hàng
+### Đặt hàng

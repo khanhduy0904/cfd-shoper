@@ -1,0 +1,9 @@
+{
+    "data": {
+        "username": "abc@gmail.com",
+        "first_name": "Khanh Duy",
+        "last_name": "Nguyen",
+        "birthday": "25/02/1994",
+        "gender": "male"
+    }
+}

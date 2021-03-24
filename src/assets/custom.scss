@@ -1,0 +1,117 @@
+.cartItem-num {
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+
+.cartItem-button {
+    border: 1px solid #ccc;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.error-text {
+    font-size: 13;
+    font-style: italic;
+    color: red;
+}
+
+.error-input {
+    border-color: red;
+}
+
+.error-input::placeholder {
+    color: red;
+}
+.contact-page{
+    label{
+        display: none;
+    }
+    .error-message{
+        color: red;
+        text-align: center;
+    }
+    .message{
+        color: green;
+        text-align: center;
+    }
+}
+.discount_rate{
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 10px;
+    line-height: 22px;
+    margin: 0;
+}
+.product-detail{
+    #productSlider{
+        a{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+    .slider-thumbnail{
+        display: flex;
+        overflow: auto;
+        .active{
+            border: 1px solid #ff6f61;
+        }
+    } 
+    .product-option{
+        .option-value{
+            margin-left: 15px;
+        }
+    } 
+}
+
+.profile-payment,
+.profile-address{
+    border: 1px dashed transparent;
+}
+.profile-address:hover,
+.profile-payment:hover,
+.profile-default{
+    border-color: #0cc300;   
+}
+.item_default{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #0cc300;
+    font-size: 13px;
+    margin: 0;
+    display: none;
+}
+
+.profile-default{
+    .item_default{
+        cursor: none;
+        display: block;
+        pointer-events: none;
+    }
+}
+.profile-address{
+    &:hover{
+        .item_default{
+            display: block;
+        }
+    }
+}
+.profile-payment{
+    &:hover{
+        .item_default{
+            display: block;
+        }
+    }
+}
+.list-styled-link.active{
+    font-weight: bold;
+}
