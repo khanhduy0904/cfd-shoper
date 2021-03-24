@@ -1,4 +1,3 @@
-import { useState } from "react"
 
 export default function SelectGroup({ form, name, title, type = "text", placeholder, inputChange, error, className, disabled, options = [] }) {
     if (!placeholder) placeholder = title

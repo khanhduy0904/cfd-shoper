@@ -17,6 +17,24 @@ export default function Payment() {
         successMessage: '',
         step: _id ? 2 : 1
     })
+    let form = useFormValidate({
+        _id,
+        payment_option: 'credit_card',
+        payment_card_number: '',
+        payment_card_name: '',
+        payment_card_month: '',
+        payment_card_year: '',
+        payment_card_cvv: '',
+        default: false
+    }, {
+        rule: {
+            payment_card_month: { required: true },
+            payment_card_year: { required: true },
+            payment_card_number: { required: true },
+            payment_card_name: { required: true },
+            payment_card_cvv: { required: true },
+        }
+    })
 
     useEffect( () => {
         let fetchApi = async () => {
@@ -36,24 +54,7 @@ export default function Payment() {
     let history = useHistory()
 
 
-    let form = useFormValidate({
-        _id,
-        payment_option: 'credit_card',
-        payment_card_number: '',
-        payment_card_name: '',
-        payment_card_month: '',
-        payment_card_year: '',
-        payment_card_cvv: '',
-        default: false
-    }, {
-        rule: {
-            payment_card_month: { required: true },
-            payment_card_year: { required: true },
-            payment_card_number: { required: true },
-            payment_card_name: { required: true },
-            payment_card_cvv: { required: true },
-        }
-    })
+    
 
 
 

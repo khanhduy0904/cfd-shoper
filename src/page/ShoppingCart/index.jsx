@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
 import withPriceFormat from '../../hoc/withPriceFormat';
 import ShoppingCartItem from './components/ShoppingCartItem';
@@ -7,7 +7,7 @@ import ShoppingCartItem from './components/ShoppingCartItem';
 export default function ShoppingCart() {
 
     let cart = useSelector(state => state.cart);
-    let dispatch = useDispatch();
+    // let dispatch = useDispatch();
 
     let amount = new Intl.NumberFormat('vn').format(cart.amount);
     let tax = new Intl.NumberFormat('vn').format(cart.amount * cart.tax / 100);
