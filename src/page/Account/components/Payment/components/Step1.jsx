@@ -2,7 +2,7 @@
 import React from 'react'
 
 export default function Step1({ nextStep, formValidate }) {
-    let { inputChange, form, error } = formValidate
+    let { inputChange, form } = formValidate
 
     return (
         <>

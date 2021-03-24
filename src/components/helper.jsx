@@ -12,9 +12,9 @@ export const serializeObjtoURL = function (obj) {
         }
     return str.join("&");
 }
-
-export default {
+let helper = {
     currency(number) {
         return new Intl.NumberFormat('vn').format(number) + ' VND'
     }
 }
+export default helper;

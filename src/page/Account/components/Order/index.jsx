@@ -20,7 +20,7 @@ export default function Order() {
         fetchApi();
     },[])
     if(!order) return null;
-    let { list, amount, tax, shippingFee, ship_post_code, phone, status } = order;
+    let { list, tax, shippingFee, status } = order;
     let num = list.reduce((sum, currentItem) => sum + currentItem.cartNum, 0);
     let subtotal = list.map(e => e.cartNum * e.real_price).reduce((sum, currentValue) => sum + currentValue, 0);
     let taxNum = subtotal*tax / 100;

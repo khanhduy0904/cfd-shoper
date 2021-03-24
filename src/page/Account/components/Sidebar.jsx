@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { Link, NavLink, useRouteMatch } from 'react-router-dom'
+import {NavLink, useRouteMatch } from 'react-router-dom'
 import { userLogout } from '../../../redux/reducers/authReducer';
 
 export default function Sidebar() {

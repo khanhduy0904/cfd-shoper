@@ -22,11 +22,11 @@ import WithCountDown from "./hoc/withCountDown";
 import { useRef } from "react";
 import saga from "./redux/saga";
 import OrderCompleted from "./page/OrderCompleted";
-import { setTranslate } from "./core/Translate";
 
-setTranslate({
-  default: localStorage.getItem("language") || "vi"
-})
+
+// setTranslate({
+//   default: localStorage.getItem("language") || "vi"
+// })
 
 function App() {
 

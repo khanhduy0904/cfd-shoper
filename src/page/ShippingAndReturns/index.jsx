@@ -251,30 +251,30 @@ export default function ShippingAndReurns() {
             <nav className="d-flex justify-content-center justify-content-md-end mt-10">
                 <ul className="pagination pagination-sm text-gray-400">
                     <li className="page-item">
-                        <a className="page-link page-link-arrow" href="#">
+                        <a className="page-link page-link-arrow" href="#p">
                             <i className="fa fa-caret-left" />
                         </a>
                     </li>
                     <li className="page-item active">
-                        <a className="page-link" href="#">1</a>
+                        <a className="page-link" href="#op">1</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">2</a>
+                        <a className="page-link" href="#popo">2</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">3</a>
+                        <a className="page-link" href="#ppoo">3</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">4</a>
+                        <a className="page-link" href="#pppoo">4</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">5</a>
+                        <a className="page-link" href="#popol">5</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">6</a>
+                        <a className="page-link" href="#plop">6</a>
                     </li>
                     <li className="page-item">
-                        <a className="page-link page-link-arrow" href="#">
+                        <a className="page-link page-link-arrow" href="#kiki">
                             <i className="fa fa-caret-right" />
                         </a>
                     </li>

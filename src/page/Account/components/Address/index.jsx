@@ -32,13 +32,19 @@ export default function Address() {
     })
     let history = useHistory();
     let {_id} = useRouteMatch().params;
-    useEffect( async () => {
-        if(_id){
-            let address = await userApi.getAddress(_id);
-            if(address.data){
-                setForm(address.data)
+    useEffect(  () => {
+
+        let fetchApi = async () => {
+            if(_id){
+                let address = await userApi.getAddress(_id);
+                if(address.data){
+                    setForm(address.data)
+                }
             }
         }
+        fetchApi()
+
+      
     },[])
 
     async function _submit() {

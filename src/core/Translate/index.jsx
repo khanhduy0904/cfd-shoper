@@ -1,40 +1,40 @@
-import React, { useContext, useState } from "react";
+// import React, { useContext, useState } from "react";
 
-let Context = React.createContext({});
+// let Context = React.createContext({});
 
-let initState = {
-    default: "en"
-}
+// let initState = {
+//     default: "en"
+// }
 
-export default function TranslateProvider({children}){
+// export default function TranslateProvider({children}){
 
-    let [state, setState] = useState(initState);
+//     let [state, setState] = useState(initState);
 
-    const translateLanguage = (initTranslate) => {
-        let {default: languageDefault} = initTranslate;
-        if(languageDefault){
-            localStorage.setItem("language",languageDefault)
-        }
-        setState({
-            ...state,
-            ...initTranslate
-        })
-    }   
-    const t = () => {
+//     const translateLanguage = (initTranslate) => {
+//         let {default: languageDefault} = initTranslate;
+//         if(languageDefault){
+//             localStorage.setItem("language",languageDefault)
+//         }
+//         setState({
+//             ...state,
+//             ...initTranslate
+//         })
+//     }   
+//     const t = () => {
 
-    }
+//     }
 
-    let value = {t};
-    return <Context.Provider value={value}>{children}</Context.Provider>
-}
+//     let value = {t};
+//     return <Context.Provider value={value}>{children}</Context.Provider>
+// }
 
-export function useTranslate(){
-    return useContext(Context);
-}
+// export function useTranslate(){
+//     return useContext(Context);
+// }
 
-export function setTranslate(initTranslate){
-    initState = {
-        ...initState,
-        ...initTranslate
-    }
-}
+// export function setTranslate(initTranslate){
+//     initState = {
+//         ...initState,
+//         ...initTranslate
+//     }
+// }

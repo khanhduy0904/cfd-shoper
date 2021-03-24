@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux'
 export default function Account() {
     let match = useRouteMatch();
     console.log(match);
-    let userAccount = useSelector(state => state.auth);
+    // let userAccount = useSelector(state => state.auth);
     return (
         <section className="pt-7 pb-12">
             <div className="container">

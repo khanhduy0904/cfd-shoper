@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import createSagaMiddleware from "redux-saga";
 import { Provider } from "react-redux";
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
-import TranslateProvider from "./Translate";
+
 
 let store;
 
@@ -37,11 +37,11 @@ export default function AppProvider({ children, reducers = {}, saga }) {
 
   return (
     <Provider store={store}>
-      <TranslateProvider>
+     
         <BrowserRouter>
           {children}
         </BrowserRouter>
-      </TranslateProvider>
+      
     </Provider>
   );
 }

@@ -39,7 +39,7 @@ import Step2 from './components/Step2'
 export default function Payment() {
 
 
-    let { _id, action } = useRouteMatch().params
+    let { _id} = useRouteMatch().params
 
     let [state, setState] = useState({
         errorMessage: '',
@@ -47,15 +47,19 @@ export default function Payment() {
         step: _id ? 2 : 1
     })
 
-    useEffect(async () => {
-        if (_id) {
-            let result = await userApi.getPayment(_id)
-
-            if (result.data) {
-                form.setForm(result.data)
+    useEffect( () => {
+        let fetchApi = async () => {
+            if (_id) {
+                let result = await userApi.getPayment(_id)
+    
+                if (result.data) {
+                    form.setForm(result.data)
+                }
             }
         }
-    }, [])
+        fetchApi()
+      
+    }, [_id,form])
 
 
     let history = useHistory()

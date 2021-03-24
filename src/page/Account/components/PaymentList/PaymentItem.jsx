@@ -5,7 +5,7 @@ import userApi from '../../../../api/userApi';
 
 export default function PaymentItem(props) {
     let [state, setState] = useState(false);
-    let { payment_card_number, payment_card_month, payment_card_name, payment_card_year, payment_card_cvv, payment_option, _id, setDefaultPayment } = props;
+    let { payment_card_number, payment_card_month, payment_card_name, payment_card_year,  payment_option, _id, setDefaultPayment } = props;
     let match = useRouteMatch();
     const _remove = () => {
         userApi.removePayment(_id);

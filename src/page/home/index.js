@@ -6,7 +6,6 @@ import TopSell from './components/TopSell';
 import Countdown from './components/Countdown';
 import Review from './components/Review';
 import Brand from './components/Brand';
-import withCountDown from '../../hoc/withCountDown';
 import WithCountDown from '../../hoc/withCountDown';
 
 export default function Home() {

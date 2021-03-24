@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import InputGroup from '../../../components/InputGroup';
 import useFormValidate from '../../../core/hook/useFormValidate';
-import { loginAction, registerAction } from '../../../redux/reducers/authReducer';
+import { registerAction } from '../../../redux/reducers/authReducer';
 
 function Register(props) {
 
@@ -56,7 +56,7 @@ function Register(props) {
     )
 
     const dispatch = useDispatch();
-    const auth = useSelector(state => state.auth);
+    // const auth = useSelector(state => state.auth);
 
     const _btnRegister = () => {
         let error = submit();

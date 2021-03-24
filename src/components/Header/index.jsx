@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import TopNav from './TopNav'
-import MainNav from './MainNav'
 import BottomNav from './BottomNav'
+import MainNav from './MainNav'
+import TopNav from './TopNav'
+
 
 
 export default function Header() {
