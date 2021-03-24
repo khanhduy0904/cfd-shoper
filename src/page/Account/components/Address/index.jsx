@@ -45,7 +45,7 @@ export default function Address() {
         fetchApi()
 
       
-    },[])
+    },[_id, setForm])
 
     async function _submit() {
         let error = submit()

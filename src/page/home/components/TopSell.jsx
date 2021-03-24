@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import productApi from '../../../api/productApi'
+
 import withPriceFormat from '../../../hoc/withPriceFormat'
 import Product from '../../Catalog/components/Product'
 

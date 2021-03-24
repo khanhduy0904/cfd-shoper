@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function SelectGroup({ form, name, title, type = "text", placeholder, inputChange, error, className, disabled, options = [] }) {
     if (!placeholder) placeholder = title
-    let [randomID, setRandomID] = useState('id-' + (Math.round(Math.random() * 100000)))
+    let randomID = 'id-' + (Math.round(Math.random() * 100000))
 
     className = className ? `form-group ${className}` : 'form-group'
 

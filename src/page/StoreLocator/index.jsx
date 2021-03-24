@@ -59,7 +59,7 @@ export default function StoreLocator() {
                         <div className="col-12 col-md-7 col-lg-8">
                             {/* Map */}
                             <div className="embed-responsive embed-responsive-4by3">
-                                <iframe src={iframeSrc} allowfullscreen="" loading="lazy"></iframe>
+                                <iframe title="Inline Frame Example" src={iframeSrc} allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>

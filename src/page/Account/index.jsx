@@ -9,7 +9,7 @@ import PaymentList from './components/PaymentList'
 import Sidebar from './components/Sidebar'
 import OrderList from './components/OrderList'
 import Payment from './components/Payment'
-import { useSelector } from 'react-redux'
+
 
 export default function Account() {
     let match = useRouteMatch();

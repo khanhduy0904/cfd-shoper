@@ -18,7 +18,7 @@ export default function Order() {
         }
 
         fetchApi();
-    },[])
+    },[_id])
     if(!order) return null;
     let { list, tax, shippingFee, status } = order;
     let num = list.reduce((sum, currentItem) => sum + currentItem.cartNum, 0);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import InputGroup from '../../../components/InputGroup';
 import useFormValidate from '../../../core/hook/useFormValidate';
 import { registerAction } from '../../../redux/reducers/authReducer';

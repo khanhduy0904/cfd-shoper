@@ -7,7 +7,7 @@ function Category(props) {
     let { categories } = useSelector(state => state.product);
     useEffect(() => {
         dispatch(getCategories());
-    }, [])
+    }, [dispatch])
 
     return (
         <li className="nav-item">

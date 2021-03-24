@@ -47,8 +47,10 @@ export default function Catalog() {
   }
   if(slug){
     slug = slug.replace(/.*id/, "");
+    let slugg = parseInt(slug);
     // Tìm ptu có id trùng với slug trên url
-    let index = categories.find(e => e.id == slug);
+    let index = categories.find(e => e.id === slugg);
+    console.log(index);
     if(index){
       category = {
         title: index.title,
@@ -62,7 +64,7 @@ export default function Catalog() {
   useEffect(() => {
     dispatch(getProductAction(queryString));
    
-  }, [queryString]);
+  }, [queryString, dispatch]);
   
   
   const sortChange = (e) => {
